@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .loading-label {
+    @apply flex items-baseline px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-600 transition ease-in-out duration-150 cursor-not-allowed;
+  }
+  .spinner-icon {
+    @apply animate-spin -ml-1 mr-3 h-5 w-5 text-white;
+  }
+  .error-banner {
+    @apply bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative;
+  }
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+  .select-dropdown {
+    @apply bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight;
+  }
+  .select-dropdown:focus {
+    @apply outline-none bg-white border-gray-500;
+  }
+}
